@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangaroo Game</title>
+  <style>
+   
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+      background: #e6b980;
+    }
+
+    h1 {
+      color: #333;
+      width: 500px;
+      height: 0px;
+      margin: auto;
+    }
+
+    #startButton {
+      padding: 10px 20px;
+      font-size: 30px;
+      cursor: pointer;
+      background-color: #8E5E3E; 
+      color: #e6b980;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #startButton:hover {
+      background-color: #7c5322; 
+    }
+
+    #gameImage {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    width: 70vw;
+    height: 40vh;
+    transform: translate(-50%, -50%);
+    display: block;
+    }
+
+    #Logo {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 50vw;
+    height: 60vh;
+    transform: translate(-50%, -50%);
+    display: block;
+    }
+
+  </style>
+</head>
+<body>
+  <img src="giphy.gif" alt="Hangaroo Logo" id="Logo">
+  <img src="pp.svg" alt="Hangaroo Logo" id="gameImage">
+  <div class="jump"></div>
+  <div class="kang"></div>
+  <button id="startButton">Start Game</button>
+
+  <script>
+    document.getElementById('startButton').addEventListener('click', function() {
+      window.location.href = 'index.html'; 
+    });
+  </script>
+</body>
+</html>
